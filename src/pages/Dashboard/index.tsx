@@ -21,7 +21,7 @@ const Dashboard: React.FC = () => {
   const [inputError, setInputError] = useState('');
   const [repositories, setRepositories] = useState<Repository[]>(() => {
     const storagedRepositories = localStorage.getItem(
-      '@@GithubExplorer:repositories'
+      '@GithubExplorer:repositories'
     );
 
     if (storagedRepositories) {
